@@ -15,7 +15,7 @@ programa {
       leia(listaConvidado[x])
       escreva("\nPossui acompanhante: \t[S]Sim \t [N]Não\n")
       leia(acompanhante)
-      se(acompanhante == 's'){
+      se((acompanhante == 's')ou(acompanhante == "S")){
         escreva("Digite o nome do acompanhante: \n ")
         leia(listaAcompanhante[x])
       }
@@ -23,7 +23,7 @@ programa {
       escreva("Possui outro convidado: [S]sim \t\t [N]não \n")
       leia(convidado)
 
-      se(convidado == 'n'){
+      se((convidado == 'n')ou(convidado == 'N')){
       pare  /* a funcão pare interrompe a execução, no caso ela finalizou o loop invés de ser necessário inserir os 100 convidados */
       }
     
